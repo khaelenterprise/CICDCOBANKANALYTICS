@@ -20,8 +20,8 @@ jobs:
       run: |
         ORIGIN_HOST=${{ secrets.DATABRICKS_ORIGIN_HOST }}
         ORIGIN_TOKEN=${{ secrets.DATABRICKS_ORIGIN_TOKEN }}
-        NOTEBOOK_BASE="/Workspace/Users/ingenieriadatosia@outlook.com/CICDCOBANKANALYTICS"
-        NOTEBOOKS=("co-bank-test-git")  # Agrega más según necesitesas
+        NOTEBOOK_BASE="/Workspace/Users/ingenieriadatosia@outlook.com/CICDCOBANKANALYTICS/proceso"
+        NOTEBOOKS=("1.Preparacion_Ambiente" "2.1.Ingest_SFC_Indicadores" "2.2.Ingest_SFC_Control" "3.1.0.Transform_SFC_Indicadores" "3.1.Transform_SFC_Indicadores" "3.2.Transform_SFC_Conceptos" "4.1.Load_SFC_Indicadores" "4.2.Load_Dim_Entidad" "4.3.Load_Dim_Tiempo" "4.4.Load_SFC_Conceptos" "5.1.Model_Fact_Indicadores_Financieros" "5.2.Load_Fact_Indicadores_Financieros" "5.Grants_Medallion")
 
         mkdir -p notebooks_to_deploy
 
